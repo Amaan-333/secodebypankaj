@@ -1,0 +1,27 @@
+l=[]
+def get():
+    n = int(input(" Enter no of students in class SE : "))
+    for i in range(n):
+        k = float(input(" Enter percentage = "))
+        l.append(k)
+
+def dis():
+    for i in l:
+         print(i, end=" ")
+    print("\n")
+
+
+def selectionsort(l, size):
+    for i in range(size):
+        min = i
+        for j in range(i+1,size):
+            if l[j] < l[min]:
+                min = j
+        l[i], l[min] = l[min],l[i]
+    dis()
+def bubble(l,size):
+    
+get()
+dis()
+size=len(l)
+selectionsort(l,size)
