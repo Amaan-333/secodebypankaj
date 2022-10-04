@@ -1,0 +1,44 @@
+l= []
+def get():
+    n=int(input(" Enter no of students in class SE : "))
+    for i in range (n):
+         k=int(input(" Enter roll no = "))
+         l.append(k)
+
+def dis():
+    for i in l:
+         print(i, end=" ")
+
+def linear(key):
+    cnt=0
+    for i in range(len(l)):
+         if (key== l[i]):
+              print(" Student attended session at ", i+1," location ")
+              break
+         else :
+            cnt =cnt+1
+
+    if (cnt-1==i):
+        print(" Student did not attend session ")
+
+def bin(low,high,array,x):
+    while low <= high:
+        mid = low + (high - low) // 2
+        if array[mid] == x:
+            print("yes")
+            return mid
+        elif array[mid] < x:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return -1
+
+get()
+dis()
+key = int(input("\n Enter roll for searching whether particular \n"
+                    " student attended training program or not "))
+ch=int(input("enter"))
+if ch==1:
+    bin(0,len(l),l,key)
+elif ch==2:
+    linear(key)
