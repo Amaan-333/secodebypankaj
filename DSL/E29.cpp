@@ -56,7 +56,7 @@ int queue::dequeue()
     if (!isEmpty())
     {
     	elmt = arr[front];
-        if (front == rear)
+        if (front+1 == rear)
         {
             front = -1;
             rear = -1;
