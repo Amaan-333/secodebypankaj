@@ -100,7 +100,7 @@ int main() {
     int ch;
     int elmt;
     do {
-        cout << "MENU\n1. Enqueue Front\n2. Elynqueue Back\n3. Dequeue Front "
+        cout << "MENU\n1. Enqueue Front\n2. Enqueue Back\n3. Dequeue Front "
                 "\n4. Dequeue Back\n5. Display Queue\n6. Exit\nEnter Choice:";
         cin >> ch;
         switch (ch) {
