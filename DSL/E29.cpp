@@ -71,7 +71,7 @@ int queue::dequeue()
 
 void queue::display()
 {
-    for (int i = front; i <= rear; i++)
+    for (int i = front+1; i <= rear; i++)
         cout << arr[i] << " ";
     cout << endl;
 }
