@@ -1,4 +1,6 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
+#inlcude <vector>
 using namespace std;
 class Person
 {
