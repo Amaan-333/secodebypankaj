@@ -1,8 +1,4 @@
-/*
- Problem Statement: Write a C++ program to generate fractal patterns by using Koch curves.
- */
- 
- 
+
 #include <iostream>
 #include <graphics.h>
 #include <math.h>
