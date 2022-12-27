@@ -6,7 +6,7 @@ using namespace std;
 
 void koch(int x1,int y1,int x2,int y2,int it)
 {
-	float angle=(60 * M_PI)/180;
+	float angle=1.04;
 	int x3=((2*x1)+x2)/3;
 	int y3=((2*y1)+y2)/3;
 	int x4=((2*x2)+x1)/3;
