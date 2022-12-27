@@ -5,14 +5,10 @@ using namespace std;
 
 void man(int sx, int sy, int step)
 {
-	// body
 	line(sx, sy, sx, sy + 45);
 	rectangle(sx - 3, sy + 10, sx + 3, sy + 45);
 
-	// head
 	circle(sx, sy - 10, 10);
-
-	// hand left
 	if (step == 1)
 	{
 		line(sx, sy + 10, sx - 15, sy + 30);
@@ -23,7 +19,7 @@ void man(int sx, int sy, int step)
 		line(sx, sy + 10, sx + 10, sy + 30);
 	}
 
-	// hand right
+	
 	line(sx, sy + 10, sx + 15, sy + 25);
 
 	// umbrella
@@ -34,20 +30,12 @@ void man(int sx, int sy, int step)
 
 	if (step == 1)
 	{
-
-		// leg left
 		line(sx, sy + 45, sx - 5, sy + 75);
-
-		// leg right
 		line(sx, sy + 45, sx + 10, sy + 75);
 	}
 	else if (step == 2)
 	{
-
-		// leg left
 		line(sx, sy + 45, sx - 10, sy + 75);
-
-		// leg right
 		line(sx, sy + 45, sx + 5, sy + 75);
 	}
 }
@@ -93,8 +81,6 @@ int main()
 		delay(350);
 		cleardevice();
 	}
-
-	// getch();
 	closegraph();
 	return 0;
 }
